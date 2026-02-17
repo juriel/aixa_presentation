@@ -169,8 +169,8 @@ export class AixaSlideArchitecture extends LitElement {
 
               <!-- Central Hub -->
               <g class="node-group aixa-hub" id="hub">
-                 <rect x="420" y="260" width="160" height="80" rx="20" fill="#000" stroke="#fff" stroke-width="2" />
-                 <text x="500" y="312" text-anchor="middle" fill="#fff" font-size="40" font-weight="700" style="font-family: 'Fredoka', sans-serif;">Aixa</text>
+                 <!-- Transparent container, borderless, with official logo -->
+                 <image href="./images/aixa_logo_web.svg" x="400" y="250" width="200" height="100" />
               </g>
 
               <!-- LLM Section -->
