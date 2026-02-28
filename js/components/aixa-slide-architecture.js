@@ -83,11 +83,13 @@ export class AixaSlideArchitecture extends LitElement {
         stroke: rgba(255, 255, 255, 0.2);
         stroke-width: 1;
         transition: stroke 0.3s ease;
+        fill: #cfcfcf50;
       }
 
       .node-group:hover .icon-bg {
           stroke: #00bfff;
           stroke-width: 2;
+          background-color: #cfcfcfff;
       }
 
       /* Logo styles */
@@ -175,20 +177,22 @@ export class AixaSlideArchitecture extends LitElement {
 
               <!-- LLM Section -->
               <g class="node-group" transform="translate(420, 100)">
-                <circle class="icon-bg" r="30" />
+                <circle class="icon-bg" r="50" />
+                <image href="./images/OpenAI_Logo.svg" x="-40" y="-40" width="80" height="80" />
                 <text class="node-text node-title" y="-45">LLM</text>
                 <text class="node-text" y="55">OpenAI</text>
               </g>
               <g class="node-group" transform="translate(580, 100)">
-                <circle class="icon-bg" r="30" />
-                <text class="node-text" y="55">Gemini</text>
+               <circle class="icon-bg" r="50" />
+                <image href="./images/Google_Gemini_logo_2025.svg" x="-40" y="-40" width="80" height="80" />
+               
               </g>
 
               <!-- WhatsApp Section -->
               <g class="node-group" transform="translate(200, 200)">
                 <rect class="icon-bg" x="-40" y="-40" width="80" height="80" rx="15" />
                 <text class="node-text" y="60">WhatsApp Cloud</text>
-                <circle cx="0" cy="0" r="15" fill="#25D366" />
+                <image href="./images/WhatsApp.svg" x="-25" y="-25" width="50" height="50" />
               </g>
 
               <!-- HTTP Section -->
@@ -201,12 +205,14 @@ export class AixaSlideArchitecture extends LitElement {
               <!-- Knowledge / DB -->
               <g class="node-group" transform="translate(800, 150)">
                 <circle class="icon-bg" r="35" />
+                <image href="./images/brain.svg" x="-25" y="-25" width="50" height="50" />
                 <text class="node-text" y="60">BD / Conocimiento</text>
               </g>
 
               <!-- Tools -->
               <g class="node-group" transform="translate(850, 300)">
                 <circle class="icon-bg" r="35" />
+                <image href="./images/hammer.svg" x="-25" y="-25" width="50" height="50" />
                 <text class="node-text" y="60">Herramientas</text>
                 <text class="node-text" x="120" y="0" style="text-anchor: start; font-size: 11px; fill: #94a3b8; line-height: 1.2;">
                     <tspan x="60" dy="-15">• Cambio Contraseña</tspan>
